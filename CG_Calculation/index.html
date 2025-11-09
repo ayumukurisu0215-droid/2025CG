@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡単な乗算電卓</title>
+    
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        input[type="text"] {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        input[type="button"] {
+            padding: 8px 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+    
+    <script>
+        /**
+         * 2つの入力値を取得し、乗算（掛け算）の結果を表示する関数
+         */
+        function kakeru() {
+            var ans;
+            
+            // 1. A, Bの入力フィールドから文字列の値を取得
+            var v1 = document.getElementById("a").value;
+            var v2 = document.getElementById("b").value;
+            
+            // 2. 文字列を数値に変換して乗算を実行
+            // ※ Number() 関数で変換。もし数値でない場合はNaNになる
+            ans = Number(v1) * Number(v2);
+            
+            // 3. 結果を「答え」フィールドに表示
+            document.getElementById("kotae").value = ans;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>乗算（掛け算）計算機</h1>
+    <p>AとBに数値を入力し、「掛け算」ボタンを押してください。</p>
+    
+    <form>
+        A = <input type="text" id="a" placeholder="数値A"> <br>
+        
+        B = <input type="text" id="b" placeholder="数値B"> <br>
+        
+        <input type="button" onclick="kakeru()" value="掛け算を実行"> <br>
+        
+        答え = <input type="text" id="kotae" readonly placeholder="結果が表示されます">
+    </form>
+</body>
+</html>
