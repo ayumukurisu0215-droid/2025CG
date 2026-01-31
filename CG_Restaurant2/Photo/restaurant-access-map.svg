@@ -1,0 +1,96 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f5f5dc"/>
+  
+  <!-- タイトル -->
+  <text x="400" y="40" font-size="28" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Italian CIT アクセスマップ
+  </text>
+  
+  <!-- 住所情報 -->
+  <rect x="50" y="60" width="700" height="80" fill="#fff" stroke="#3498db" stroke-width="2" rx="5"/>
+  <text x="70" y="90" font-size="18" font-weight="bold" fill="#2c3e50">
+    📍 住所：〒999-999 奈良氏之市都田沼１２３
+  </text>
+  <text x="70" y="120" font-size="18" font-weight="bold" fill="#e74c3c">
+    🚶 都田沼駅より徒歩2分
+  </text>
+  
+  <!-- 道路 - 縦 -->
+  <rect x="200" y="150" width="80" height="400" fill="#d0d0d0" stroke="#999" stroke-width="2"/>
+  <line x1="240" y1="150" x2="240" y2="550" stroke="#fff" stroke-width="3" stroke-dasharray="10,10"/>
+  
+  <!-- 道路 - 横 -->
+  <rect x="50" y="300" width="700" height="80" fill="#d0d0d0" stroke="#999" stroke-width="2"/>
+  <line x1="50" y1="340" x2="750" y2="340" stroke="#fff" stroke-width="3" stroke-dasharray="10,10"/>
+  
+  <!-- 駅ビル -->
+  <rect x="320" y="240" width="120" height="100" fill="#3498db" stroke="#2c3e50" stroke-width="3"/>
+  <text x="380" y="285" font-size="18" font-weight="bold" text-anchor="middle" fill="#fff">都田沼駅</text>
+  <text x="380" y="315" font-size="24" text-anchor="middle" fill="#fff">🚉</text>
+  
+  <!-- 駅出口 -->
+  <circle cx="380" cy="380" r="15" fill="#e74c3c" stroke="#fff" stroke-width="2"/>
+  <text x="380" y="386" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">出口</text>
+  
+  <!-- レストラン -->
+  <rect x="500" y="410" width="140" height="120" fill="#e67e22" stroke="#2c3e50" stroke-width="3"/>
+  <text x="570" y="465" font-size="22" font-weight="bold" text-anchor="middle" fill="#fff">Italian CIT</text>
+  <text x="570" y="500" font-size="32" text-anchor="middle">🍝</text>
+  
+  <!-- 徒歩ルート -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#e74c3c"/>
+    </marker>
+  </defs>
+  
+  <path d="M 395 380 L 470 380 L 470 470 L 500 470" 
+        fill="none" stroke="#e74c3c" stroke-width="4" 
+        stroke-dasharray="8,8" marker-end="url(#arrowhead)"/>
+  
+  <!-- 徒歩時間表示 -->
+  <ellipse cx="435" cy="420" rx="45" ry="25" fill="#fff" stroke="#e74c3c" stroke-width="2"/>
+  <text x="435" y="422" font-size="14" font-weight="bold" text-anchor="middle" fill="#e74c3c">徒歩2分</text>
+  <text x="435" y="437" font-size="12" text-anchor="middle" fill="#e74c3c">約150m</text>
+  
+  <!-- 周辺施設 -->
+  <!-- コンビニ -->
+  <rect x="320" y="420" width="60" height="50" fill="#27ae60" stroke="#2c3e50" stroke-width="2"/>
+  <text x="350" y="440" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">コンビニ</text>
+  <text x="350" y="460" font-size="18" text-anchor="middle">🏪</text>
+  
+  <!-- 銀行 -->
+  <rect x="480" y="200" width="80" height="60" fill="#95a5a6" stroke="#2c3e50" stroke-width="2"/>
+  <text x="520" y="220" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">みずほ銀行</text>
+  <text x="520" y="245" font-size="18" text-anchor="middle">🏦</text>
+  
+  <!-- カフェ -->
+  <rect x="100" y="200" width="70" height="60" fill="#8e44ad" stroke="#2c3e50" stroke-width="2"/>
+  <text x="135" y="220" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">カフェ</text>
+  <text x="135" y="240" font-size="18" text-anchor="middle">☕</text>
+  
+  <!-- 公園 -->
+  <rect x="600" y="200" width="100" height="80" fill="#2ecc71" stroke="#2c3e50" stroke-width="2"/>
+  <text x="650" y="225" font-size="12" font-weight="bold" text-anchor="middle" fill="#fff">都田沼公園</text>
+  <text x="650" y="255" font-size="24" text-anchor="middle">🌳</text>
+  
+  <!-- 方角 -->
+  <circle cx="700" cy="480" r="40" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+  <text x="700" y="470" font-size="12" font-weight="bold" text-anchor="middle" fill="#2c3e50">N</text>
+  <text x="700" y="485" font-size="16" text-anchor="middle">↑</text>
+  <line x1="700" y1="450" x2="700" y2="440" stroke="#e74c3c" stroke-width="3"/>
+  
+  <!-- 道路名 -->
+  <text x="240" y="180" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50" transform="rotate(-90 240 180)">
+    都田沼通り
+  </text>
+  <text x="400" y="320" font-size="14" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    さくら通り
+  </text>
+  
+  <!-- 目印 -->
+  <text x="50" y="570" font-size="14" fill="#2c3e50">
+    ★ 目印：駅を出て右折、さくら通りを直進、左手にございます
+  </text>
+</svg>

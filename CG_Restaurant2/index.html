@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>イタリアン CIT（シーアイティ）</title>
+  <meta name="description" content="普段使いの気取らない贅沢しませんか？幸せを呼ぶ…ワインと国産牛肉とチーズの美味しいお店です。">
+  <meta name="keywords" content="イタリアン, ワイン, チーズ, 奈良市, 都田沼">
+ 
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    .hero-title {
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    .hero p {
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    }
+    /* コース画像の調整 */
+    .menu-item .menu-img {
+        width: 120px; /* テンプレートに合わせて調整 */
+        height: 120px;
+        object-fit: cover;
+    }
+    /* こだわりセクションのアイコン調整 */
+    .feature-box {
+        padding: 20px;
+        height: 100%;
+    }
+    .feature-box img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">Italian CIT</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">ホーム</a></li>
+          <li><a href="#about">CITについて</a></li>
+          <li><a href="#features">こだわり</a></li>
+          <li><a href="#menu">メニュー</a></li>
+          <li><a href="#events">記念日・サプライズ</a></li>
+          <li><a href="#contact">アクセス</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted d-none d-sm-block" href="#book-a-table">ご予約・お問い合わせ</a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section">
+      <div class="container-fluid hero-container" data-aos="fade-up">
+        <div class="row g-0 align-items-center">
+          <div class="col-lg-6 content-col">
+            <div class="content-wrapper">
+              <div class="status-badge">Welcome to CIT</div>
+              <h2 class="hero-title">普段使いの<br>気取らない贅沢<br>しませんか？</h2>
+              <p class="mb-4">幸せを呼ぶ…ワインと国産牛肉とチーズの美味しいお店です。</p>
+
+              <div class="opening-hours" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-clock"></i>
+                <span>Open Daily: 店舗へお問い合わせください</span>
+              </div>
+
+              <div class="btn-group">
+                <a href="#menu" class="btn btn-menu">メニューを見る</a>
+                <a href="#contact" class="btn btn-book">アクセス情報</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 swiper-col">
+            <div class="swiper hero-swiper init-swiper" data-aos="zoom-out" data-aos-delay="100">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 800,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "effect": "fade",
+                  "slidesPerView": 1
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="img-container">
+                    <img src="Photo/Home.png" alt="Main Visual">
+                  </div>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center gy-4">
+          
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="about-content">
+              <h3>コンセプト & 店内の雰囲気</h3>
+              <p class="fst-italic">
+                都田沼駅より徒歩2分。ワインの専門家はいません。自分たちが美味しいと思ったワインだけをご用意しております。
+              </p>
+              <p>
+                いつも笑顔が溢れる明るい店内です。初めての方もお気軽にお越しください。
+                『普段使いの気取らない贅沢』をテーマに、お仕事帰りや大切なパートナーと、様々なシーンでご利用いただけます。
+                女子会、記念日、友人とのお食事、そしてひとり飲みにも。
+              </p>
+              <p class="mb-0">
+                <strong>※衛生対策は万全に行っております。</strong>
+              </p>
+
+              <div class="mt-4 ratio ratio-16x9">
+                <video controls>
+                    <source src="video/wine.mp4" type="video/mp4">
+                    お使いのブラウザは動画タグに対応していません。
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="about-image-wrapper">
+              <img src="Photo/about1.png" class="img-fluid main-image shadow" alt="Restaurant Interior">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><section id="features" class="features section">
+        <div class="container section-title" data-aos="fade-up">
+            <h2>Our Commitments</h2>
+            <p>CIT 5つのこだわり</p>
+        </div>
+
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-box d-flex flex-column align-items-center">
+                        <img src="Photo/about2.png" alt="日替わりメニュー">
+                        <h4>日替わりメニュー</h4>
+                        <p>豊富な日替わりメニュー！！旬の美味しいお野菜、魚、お肉で美味しい料理を提供しております。毎日変わるおすすめメニューも大人気です。</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-box d-flex flex-column align-items-center">
+                        <img src="Photo/about3.png" alt="気軽に立ち寄れる">
+                        <h4>気軽に立ち寄れる</h4>
+                        <p>気軽に立ち寄れるワイン酒場。ワインに合わせたリーズナブルで美味しいアラカルトメニューも豊富です！！</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-box d-flex flex-column align-items-center">
+                        <img src="Photo/about4.png" alt="パーティーコース">
+                        <h4>パーティーコース</h4>
+                        <p>お得なコースメニューは2980円から。飲み放題付きコースも人気です。女子会、お仲間とのご宴会におすすめです。</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-box d-flex flex-column align-items-center">
+                        <img src="Photo/wine.png" alt="グラスワイン">
+                        <h4>グラスワイン</h4>
+                        <p>リーズナブルな日替わりグラスワインは580円〜。コスパ最高の美味しいワインを取り揃えております。</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-box d-flex flex-column align-items-center">
+                        <img src="Photo/cheese.png" alt="絶品チーズ">
+                        <h4>絶品チーズ</h4>
+                        <p>ワインとチーズをお楽しみください。オーナーシェフが厳選した絶品チーズを使ったメニューも人気です。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Menu</h2>
+        <p>コスパ最高のコースメニュー & こだわり食材</p>
+      </div><div class="container" data-aos="fade-up">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="menu-filters isotope-filters mb-5">
+            <ul>
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-course">Course</li>
+              <li data-filter=".filter-special">Specialty</li>
+            </ul>
+          </div>
+
+          <div class="menu-container isotope-container row gy-4">
+
+            <div class="col-lg-6 isotope-item filter-course">
+              <div class="menu-item d-flex align-items-center gap-4">
+                <img src="Photo/menu.png" alt="カジュアルコース" class="menu-img img-fluid rounded-3">
+                <div class="menu-content">
+                  <h5>カジュアルコース</h5>
+                  <p>前菜、サラダ、パスタなどを気軽に楽しめるコース。</p>
+                  <div class="price">2,980円</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 isotope-item filter-course">
+              <div class="menu-item d-flex align-items-center gap-4">
+                <img src="Photo/menu2.png" alt="スタンダードコース" class="menu-img img-fluid rounded-3">
+                <div class="menu-content">
+                  <h5>スタンダードコース <span class="menu-tag">No.1</span></h5>
+                  <p>定番人気のメニューがバランス良く味わえるコース。</p>
+                  <div class="price">3,980円</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 isotope-item filter-course">
+              <div class="menu-item d-flex align-items-center gap-4">
+                <img src="Photo/menu3.png" alt="プレミアムコース" class="menu-img img-fluid rounded-3">
+                <div class="menu-content">
+                  <h5>プレミアムコース</h5>
+                  <p>厳選国産牛や絶品チーズなど、旬の贅沢を存分に堪能。</p>
+                  <div class="price">5,980円</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 isotope-item filter-special">
+                <div class="menu-item d-flex align-items-center gap-4">
+                  <img src="Photo/menu4.png" alt="旬の食材" class="menu-img img-fluid rounded-3">
+                  <div class="menu-content">
+                    <h5>旬の食材・こだわりメニュー</h5>
+                    <p>豊富な日替わりメニュー！旬の美味しいお野菜、魚、お肉。</p>
+                    <div class="price">Ask</div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 isotope-item filter-special">
+                <div class="menu-item d-flex align-items-center gap-4">
+                  <img src="video/red_wine.gif" alt="ワイン" class="menu-img img-fluid rounded-3">
+                  <div class="menu-content">
+                    <h5>グラスワイン</h5>
+                    <p>リーズナブルな日替わりグラスワイン。</p>
+                    <div class="price">580円〜</div>
+                  </div>
+                </div>
+            </div>
+
+          </div></div>
+
+        <div class="text-center mt-5" data-aos="fade-up">
+            <p class="note" style="color: #c41e3a;">※飲み放題付きコースも人気です。女子会、お仲間とのご宴会におすすめです。</p>
+        </div>
+
+      </div>
+
+      <section id="events" class="events section">
+      
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Surprise & Anniversary</h2>
+          <p>記念日・サプライズ</p>
+        </div>
+  
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center gy-4">
+              <div class="col-lg-6 order-2 order-lg-1">
+                  <img src="https://placehold.co/600x400/ffe4e1/c41e3a?text=Happy+Anniversary" alt="サプライズイメージ" class="img-fluid rounded shadow w-100">
+              </div>
+              
+              <div class="col-lg-6 order-1 order-lg-2">
+                  <div class="ps-lg-4">
+                      <h3 class="mb-4">誕生日のサプライズも大歓迎！！</h3>
+                      
+                      <div class="d-flex mb-4">
+                          <div class="flex-shrink-0">
+                              <i class="bi bi-cake2 display-6" style="color: #c41e3a;"></i>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                              <h5>ケーキ持ち込み可能</h5>
+                              <p>お好きなケーキをお持ち込みいただけます。大切な方のお祝いを精一杯お手伝いさせていただきます。</p>
+                          </div>
+                      </div>
+  
+                      <div class="d-flex">
+                          <div class="flex-shrink-0">
+                              <i class="bi bi-heart-fill display-6" style="color: #c41e3a;"></i>
+                          </div>
+                          <div class="flex-grow-1 ms-3">
+                              <h5>特別な日の演出</h5>
+                              <p>お誕生日、結婚記念日、歓送迎会など。事前にスタッフまでご相談いただければ、サプライズのタイミングなど調整いたします。</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="book-a-table" class="book-a-table section">
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+  
+          <div class="row gy-5 mb-5">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="reservation-info">
+                <div class="text-content">
+                  <h3>Book Your Table</h3>
+                  <p>WEBからのご予約はこちらのフォームをご利用ください。お急ぎの場合や、8名様以上の貸切のご相談はお電話にて承っております。</p>
+  
+                  <div class="reservation-details mt-4">
+                    <div class="detail-item">
+                      <i class="bi bi-telephone"></i>
+                      <div>
+                        <h5>お電話でのご予約</h5>
+                        <p>000-1234-5678</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+              <div class="reservation-image">
+                <img src="Photo/about1.png" alt="Restaurant interior" class="img-fluid rounded">
+              </div>
+            </div>
+          </div>
+  
+          <div class="row">
+            <div class="col-12" data-aos="fade-up" data-aos-delay="400">
+              <div class="reservation-form-wrapper">
+                <div class="form-header">
+                  <h3>Reservation Form</h3>
+                  <p>ご予約内容を入力してください</p>
+                </div>
+  
+                <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form mt-4">
+                  <div class="row gy-4">
+                    <div class="col-lg-4 form-group">
+                      <input type="text" name="name" class="form-control" placeholder="お名前" required="">
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <input type="email" class="form-control" name="email" placeholder="メールアドレス" required="">
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <input type="text" class="form-control" name="phone" placeholder="電話番号" required="">
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <input type="date" name="date" class="form-control" placeholder="日付" required="">
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <input type="time" class="form-control" name="time" id="time" placeholder="時間" required="">
+                    </div>
+                    <div class="col-lg-4 form-group">
+                      <input type="number" class="form-control" name="people" placeholder="人数" required="">
+                    </div>
+  
+                    <div class="form-group mt-4">
+                      <textarea class="form-control" name="message" rows="3" placeholder="ご要望など (任意)"></textarea>
+                    </div>
+                  </div>
+  
+                  <div class="my-3">
+                    <div class="loading">送信中...</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">ご予約リクエストを送信しました。店舗からの確認連絡をお待ちください。</div>
+                  </div>
+  
+                  <div class="text-center mt-4">
+                    <button type="submit" class="btn-book-table">予約する</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+      </section>
+    <section id="contact" class="location section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Access</h2>
+        <p>店舗情報・アクセス</p>
+      </div><div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="map-container">
+              <img src="Photo/restaurant-access-map.svg" alt="Map Location" class="img-fluid w-100" style="height: 100%; object-fit: contain; min-height: 400px; background: #f4f4f4;">
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="info-container">
+              <div class="section-header">
+                <h2>Find Us</h2>
+                <p>イタリアン CIT（シーアイティ）</p>
+              </div>
+
+              <div class="info-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="info-icon">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="info-content">
+                  <h3>住所</h3>
+                  <p>〒999-999 奈良市之市都田沼123</p>
+                  <p>（都田沼駅より徒歩2分）</p>
+                </div>
+              </div>
+
+              <div class="info-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="info-icon">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="info-content">
+                  <h3>電話番号</h3>
+                  <p>000-1234-5678</p>
+                </div>
+              </div>
+
+              <div class="info-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="info-icon">
+                  <i class="bi bi-clock"></i>
+                </div>
+                <div class="info-content">
+                  <h3>店舗情報</h3>
+                  <div class="hours-grid">
+                    <div class="day">定休日</div>
+                    <div class="time">※詳細は店舗へお問い合わせください</div>
+                    <div class="day">貸切</div>
+                    <div class="time">8名様以上で可能（定休日でも相談可）</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="info-card" data-aos="fade-up" data-aos-delay="600">
+                 <div class="store-image mt-3">
+                     <img src="Photo/access1.png" alt="店舗外観" class="img-fluid rounded">
+                 </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section></main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Italian CIT</span>
+          </a>
+          <p>普段使いの気取らない贅沢を。ワインと国産牛肉とチーズの美味しいお店。</p>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>〒999-999 奈良市之市都田沼123</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>000-1234-5678</span></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p class="mb-2" style="color: #c41e3a;">※8名様以上の貸切は定休日でもお気軽にお電話でご相談ください。</p>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">2024 イタリアン CIT（シーアイティ）</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
